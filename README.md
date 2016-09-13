@@ -19,4 +19,9 @@ Razor Exercise
 5. Use an if statement to print "TGIF" if it's Friday
 6. Use the @Html form, input, and other extensions to create a form without writing html
 
-[FormExtensions](https://msdn.microsoft.com/en-us/library/system.web.mvc.html.formextensions(v=vs.118).aspx),  [InputExtensions](https://msdn.microsoft.com/en-us/library/system.web.mvc.html.inputextensions(v=vs.118).aspx), and others! 
+[FormExtensions](https://msdn.microsoft.com/en-us/library/system.web.mvc.html.formextensions(v=vs.118).aspx),  [InputExtensions](https://msdn.microsoft.com/en-us/library/system.web.mvc.html.inputextensions(v=vs.118).aspx), and others!
+
+----------
+**Important Note:** Do not "borrow" or copy/paste the code that already exists in this repository. Take time to understand what's going on and implement it yourself instead.
+
+----------
