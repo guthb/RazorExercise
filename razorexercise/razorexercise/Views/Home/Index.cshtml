@@ -32,17 +32,45 @@
 
 <div class="row">
     <div class="col-md-4">
-        
-
             @{
-                List<string> Names = new List<string>();          
-           
-                <ul class="list-group">
-                    foreach (string name in Names)
-                    {
-                     <li> name </li>
-                    }
-                </ul>
+                List<string> Names = new List<string>();
+                Names.Add("Jeff");
+                Names.Add("Brad");
+                Names.Add("Kate");
             }
+
+
+                <ul class="list-group">
+                    @{
+                        var greeting = "Welcome to our site!, Hello ";
+
+                        var weekDay = DateTime.Now.DayOfWeek;
+                        foreach (string name in Names)
+
+                        {
+                            if (DateTime.Now.DayOfWeek == DayOfWeek.Friday)
+                            {
+                                var greetingMessage = greeting + " Thank Goodness its " + weekDay;
+                            }
+
+                        <li>@greeting @name </li>
+                        }
+                     }
+                </ul>
+   
     </div>
+    <div id="Form">
+        
+        
+            @{Html.BeginForm(); }
+            <p>Enter some Text! @Html.TextBox("FirstTextBox") </p>
+            
+            <p>Check me! @Html.CheckBox("CheckMe")</p>
+           
+            @{Html.EndForm(); }
+           
+
+    </div>
+
+
 </div>
